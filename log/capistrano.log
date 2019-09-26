@@ -1,0 +1,101 @@
+# Logfile created on 2019-09-26 05:13:24 +0000 by logger.rb/66358
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 05:13:24 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [209d418c] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@3.113.147.125
+ DEBUG [209d418c] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 07:46:43 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [80529dba] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@3.113.147.125
+ DEBUG [80529dba] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 07:51:07 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [0a93ea04] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@3.113.147.125
+ DEBUG [0a93ea04] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 07:53:24 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c54ce289] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [c54ce289] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 07:58:09 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [f007f770] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [f007f770] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 08:02:33 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [67856d82] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [67856d82] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 08:23:34 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [dfffd77e] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [dfffd77e] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 08:25:55 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a744c251] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [a744c251] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 08:41:07 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [416052fc] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@3.113.147.125
+ DEBUG [416052fc] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 08:42:29 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d57751e6] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [d57751e6] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 10:03:11 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [e085570a] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [e085570a] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 10:09:02 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [40193813] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [40193813] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 10:19:51 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [bb060f07] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [bb060f07] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 10:22:43 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c93bdbb9] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [c93bdbb9] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 12:53:30 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [51bfb5c3] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [51bfb5c3] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 13:02:54 +0000 cap production deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [657f356c] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [657f356c] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 13:14:49 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [96351011] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [96351011] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 13:26:58 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [953c985b] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [953c985b] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 15:22:43 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [a0146e5d] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [a0146e5d] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-09-26 15:40:17 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [6d901b6f] Running [ -d $HOME/.rbenv/versions/2.6.2 ] as ryusuke@172.31.44.164
+ DEBUG [6d901b6f] Command: [ -d $HOME/.rbenv/versions/2.6.2 ]

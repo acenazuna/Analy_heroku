@@ -1,0 +1,51 @@
+<header>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-12" style="margin:0 0 0 0;">
+
+      <div class="center-block" style="margin: 0 0 25px 0;",color:#555;>
+        <nav class="nav navbar-nav navbar-left" style="margin-right: 50px;">
+          <%=link_to root_path, :style=>"color:#777;text-decoration: none;" do %>
+          <h1>Analy</h1>
+          <% end %>
+        </nav>
+      </div>
+
+
+      <div id="slidemenu">
+      </div>
+
+
+          <ul class="nav navbar-nav navbar-center" data-hover="dropdown" data-animations="zoomIn fadeIn fadeInUp fadeIn">
+              <li class="inline-block">
+                <%=link_to about_index_path, :style=>"margin:0 0px 0 15px;" do%>
+                <p>About</p>
+                <% end %>
+              </li>
+              <li class="inline-block">
+                <%=link_to scores_path, :style=>"margin:0 0px 0 15px;" do%>
+                <p>スコア</p>
+                <% end %>
+              </li>
+
+          </ul>
+          <ul class="navbar-right" style="margin:15px 0px 0px 0px;">
+              <% if user_signed_in? %>
+              <%= current_user.name %>
+                <%= link_to " log out", destroy_user_session_path, class: "glyphicon glyphicon-log-out navbar-link", style: "padding: 0 15px 0 15px;", method: :delete %>
+              <% else %>
+                <%= link_to " sign up", new_user_registration_path, class: "glyphicon glyphicon-edit sign_up", style: "padding: 0 35px 0 13px;"  %>
+                <%= link_to " log in", new_user_session_path, class: "glyphicon glyphicon-log-in sign_in",  style: "padding: 0 15px 0 13px;"  %>
+              <% end %>
+          </ul>
+
+
+
+
+    </div>
+    </div>
+  </div>
+</nav>
+</header>

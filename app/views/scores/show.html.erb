@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<%= render 'layouts/header' %>
+<div class="container">
+  <div class="row">
+  <div class="col-md-12">
+
+<p id="notice"><%= notice %></p>
+
+<h2>
+  <%= @score.tittle %> - <%= @score.user.name %>
+</h2>
+
+<h3>
+  Key = <%= @score.key %>
+</h3>
+
+<div class="col-md-6">
+  <h3>Chord</h3>
+      <%= simple_format(@score.chord) %>
+</div>
+
+<div class="col-md-6">
+  <h3>Degree</h3>
+
+   <!-- ifで12x2メジャーマイナーキーの分岐,ディグリーに変換
+        現在　メジャーダイアトニックのみ対応
+        *マイナーキーのbの位置に注意
+        例:Cナチュラルマイナーの Eb は bIII
+    -->
+
+  <% if @score.key == "C" %>
+  <%= @score.chord
+      hash = {'C'=>'I','C#'=>'#I','Db'=>'bII','D'=>'II','D#'=>'#II','Eb'=>'bIII','E'=>'III','F'=>'IV','F#'=>'#IV','Gb'=>'bV','G'=>'V','G#'=>'#V','Ab'=>'bVI','A'=>'VI','A#'=>'#VI','Bb'=>'bVII','B'=>'VII',}
+      simple_format(@score.chord.gsub(/C|C#|Db|D|D#|Eb|E|F|F#|Gb|G|G#|Ab|A|A#|Bb|B|/,hash))
+  %>
+
+  <% elsif @score.key == "C#/Db" %>
+  <%= @score.chord
+      hash = {'C'=>'bI','C#'=>'I','Db'=>'I','D'=>'bII','D#'=>'II','Eb'=>'II','E'=>'#II','F'=>'III','F#'=>'IV','Gb'=>'IV','G'=>'#IV','G#'=>'V','Ab'=>'V','A'=>'bVI','A#'=>'VI','Bb'=>'VI','B'=>'VII',}
+      simple_format(@score.chord.gsub(/C|C#|Db|D|D#|Eb|E|F|F#|Gb|G|G#|Ab|A|A#|Bb|B|/,hash))
+  %>
+  <% elsif @score.key == "D" %>
+  <%= @score.chord
+      hash = {'D'=>'I','E'=>'II','F#'=>'III','G'=>'IV','A'=>'V','B'=>'VI','C#'=>'VII',}
+      simple_format(@score.chord.gsub(/C|C#|Db|D|D#|Eb|E|F|F#|Gb|G|G#|Ab|A|A#|Bb|B|/,hash))
+  %>
+  <% elsif @score.key == "D#/Eb" %>
+  <%= @score.chord
+      hash = {'Eb'=>'I','F'=>'II','G'=>'III','Ab'=>'IV','Bb'=>'V','C'=>'VI','D'=>'VII',}
+      simple_format(@score.chord.gsub(/C|C#|Db|D|D#|Eb|E|F|F#|Gb|G|G#|Ab|A|A#|Bb|B|/,hash))
+  %>
+  <% elsif @score.key == "E" %>
+  <%= @score.chord
+      hash = {'E'=>'I','F#'=>'II','G#'=>'III','A'=>'IV','B'=>'V','C#'=>'VI','D#'=>'VII',}
+      simple_format(@score.chord.gsub(/C|C#|Db|D|D#|Eb|E|F#|Gb|G|G#|Ab|A|A#|Bb|B|/,hash))
+  %>
+  <% elsif @score.key == "F" %>
+  <%= @score.chord
+      hash = {'F'=>'I','G'=>'II','A'=>'III','Bb'=>'IV','C'=>'V','D'=>'VI','E'=>'VII',}
+      simple_format(@score.chord.gsub(/C|C#|Db|D|D#|Eb|E|F|F#|Gb|G|G#|Ab|A|A#|Bb|B|/,hash))
+  %>
+  <% elsif @score.key == "F#/Gb" %>
+  <!-- VIIの　E#(F) の表記  あとで質問 -->
+  <%= @score.chord
+      hash = {'F#'=>'I','G#'=>'II','A#'=>'III','Bb'=>'III','B'=>'IV','C#'=>'V','D#'=>'VI','E#'=>'VII','F'=>'VII',}
+      simple_format(@score.chord.gsub(/C|C#|Db|D|D#|Eb|E|E#|F|F#|Gb|G|G#|Ab|A|A#|Bb|B|/,hash))
+  %>
+  <% elsif @score.key == "G" %>
+  <%= @score.chord
+      hash = {'G'=>'I','A'=>'II','B'=>'III','C'=>'IV','D'=>'V','E'=>'VI','F#'=>'VII',}
+      simple_format(@score.chord.gsub(/C|C#|Db|D|D#|Eb|E|F|F#|Gb|G|G#|Ab|A|A#|Bb|B|/,hash))
+  %>
+  <% elsif @score.key == "G#/Ab" %>
+  <%= @score.chord
+      hash = {'G'=>'I','A'=>'II','B'=>'III','C'=>'IV','D'=>'V','E'=>'VI','F#'=>'VII',}
+      simple_format(@score.chord.gsub(/C|C#|Db|D|D#|Eb|E|F|F#|Gb|G|G#|Ab|A|A#|Bb|B|/,hash))
+  %>
+  <% elsif @score.key == "A" %>
+  <%= @score.chord
+      hash = {'A'=>'I','A#'=>'#I','B'=>'II','C#'=>'III','D'=>'IV','E'=>'V','F#'=>'VI','G#'=>'VII',}
+      simple_format(@score.chord.gsub(/C#|Db|D|D#|Eb|E|F#|Gb|G|G#|Ab|A|A#|Bb|B|/,hash))
+  %>
+  <% elsif @score.key == "A#/Bb" %>
+  <%= @score.chord
+      hash = {'Bb'=>'I','C'=>'II','D'=>'III','Eb'=>'IV','F'=>'V','G'=>'VI','A'=>'VII',}
+      simple_format(@score.chord.gsub(/C|C#|Db|D|D#|Eb|E|F|F#|Gb|G|G#|Ab|A|A#|Bb|B|/,hash))
+  %>
+  <% elsif @score.key == "B" %>
+  <%= @score.chord
+      hash = {'B'=>'I','C#'=>'II','D#'=>'III','E'=>'IV','F#'=>'V','G#'=>'VI','A#'=>'VII',}
+      simple_format(@score.chord.gsub(/C#|Db|D#|Eb|E|F#|Gb|G#|Ab|A#|Bb|B|/,hash))
+  %>
+
+  <% else %>
+  <p>未実装</p>
+  <% end %>
+</div>
+
+<div>
+  <% if @score.user == current_user %>
+  <%= link_to 'Edit', edit_score_path(@score),class: 'btn btn-info' %>
+  <%= link_to 'Destroy', score_path(@score), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+  <% end %>
+  <%= link_to 'Back', scores_path, class: 'btn btn-default' %>
+
+</div>
+
+</div>
+</div>
+</div>

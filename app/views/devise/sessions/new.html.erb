@@ -1,0 +1,45 @@
+<%= render 'layouts/header' %>
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-md-offset-2">
+<div class="form-user style-1 rounded has-shadow-1">
+
+      <div class="form-header text-center "style="padding-top: 50px;padding-bottom: 20px;">
+        <h2>Log in</h2>
+      </div>
+      <div class="col-md-8 col-md-offset-2">
+      <%= render "devise/shared/error_messages", resource: resource %>
+      </div>
+
+      <div class="form-body">
+        <div class="col-md-12 col-md-offset-2">
+
+
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+        <div class="field" style="padding-top: 20px;padding-bottom: 20px;">
+          <div class="col-md-9"><%= f.label :email %></div>
+          <div class="col-md-9"><%= f.email_field :email, autofocus: true, autocomplete: "email", :size  => "50",  class: "form-control" %></div>
+        </div>
+
+        <div class="field" style="padding-top: 20px;padding-bottom: 20px;">
+          <div class="col-md-9"><%= f.label :password %></div>
+          <div class="col-md-9"><%= f.password_field :password, autocomplete: "new-password",  class: "form-control" %></div>
+        </div>
+
+        <% if devise_mapping.rememberable? %>
+          <div class="field" style="padding-top: 20px;padding-bottom: 20px;">
+          <div class="col-md-9" style="padding-right: 20px;><%= f.check_box :remember_me %><%= f.label :remember_me %></div>
+          </div>
+        <% end %>
+
+        <div class="actions">
+        <div class="col-md-9"><%= f.submit "Log in", class: "btn btn-success", style:"width:100%;" %></div>
+        </div>
+      <% end %>
+
+       <div class="col-md-9"><%= render "devise/shared/links" %></div>
+</div>
+</div>
+</div>
+</div>

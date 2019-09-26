@@ -1,0 +1,44 @@
+<%= render 'layouts/header' %>
+<body>
+  <div class="header-under">
+  </div>
+<div class="container">
+  <div class="row">
+  <div class="col-md-12">
+
+
+<h1>スコア一覧</h1>
+<div class="">
+  <% if user_signed_in? %>
+  <%= link_to 'New Score', new_score_path, class: 'btn btn-default' %>
+  <% else %>
+  <% end %>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @scores.each do |score| %>
+      <tr>
+        <div class="box" style="margin:15px 0px 15px 0px;">
+        <td><%= score.tittle %></td>
+        <td><%= score.user.name %></td>
+        <td><%= link_to 'Show', score, class: 'btn btn-default' %></td>        </div>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+
+  </div>
+  </div>
+</div>
+</body>
