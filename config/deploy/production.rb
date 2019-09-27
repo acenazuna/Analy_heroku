@@ -13,7 +13,7 @@ server '172.31.44.164', user: 'ryusuke', roles: %w{app db web}
 #デプロイするサーバーにsshログインする鍵の情報を記述
 set :ssh_options, keys: '~/.ssh/analy_key_rsa.pub'
 
-#heroku画像表示　
+#heroku画像表示　-- ダメだったけどとりあえず残しとく
 config.serve_static_assets = true
 config.assets.compile = true
 
